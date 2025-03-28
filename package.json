@@ -1,0 +1,26 @@
+{
+    "name": "happy-heart",
+    "displayName": "Happy Heart",
+    "description": "A custom VS Code theme with vibrant colors and a happy vibe.",
+    "version": "0.0.1",
+    "engines": {
+      "vscode": "^1.60.0"
+    },
+    "categories": [
+      "Themes"
+    ],
+    "contributes": {
+      "themes": [
+        {
+          "label": "Happy Heart",
+          "uiTheme": "vs-dark",
+          "path": "./themes/happy-heart-color-theme.json"
+        }
+      ]
+    },
+    "scripts": {
+      "vscode:prepublish": "npm run compile"
+    },
+    "devDependencies": {}
+  }
+  
