@@ -19,8 +19,10 @@
       ]
     },
     "scripts": {
-      "vscode:prepublish": "npm run compile"
+      "vscode:prepublish": "npm run compile",
+      "compile": "echo 'No compile step required'"
     },
+    
     "devDependencies": {}
   }
   
