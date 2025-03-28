@@ -1,6 +1,7 @@
 {
     "name": "happy-heart",
     "displayName": "Happy Heart",
+    "publisher": "Khushdil380",
     "description": "A custom VS Code theme with vibrant colors and a happy vibe.",
     "version": "0.0.1",
     "engines": {
