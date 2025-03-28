@@ -19,7 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '16' # Use the Node.js version compatible with your project
+          node-version: '20'  # Updated to Node.js v20 to meet engine requirements
 
       - name: Install Dependencies
         run: npm ci
