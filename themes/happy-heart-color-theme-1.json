@@ -61,7 +61,7 @@
       "minimap.background": "#6200ff2f",
       "minimapSlider.background": "#5eff00",
       "editorGutter.background": "#0b0c3a",
-      "editorLineNumber.foreground": "#0004ff",
+      "editorLineNumber.foreground": "#0004ff"
     },
     "tokenColors": [
       {

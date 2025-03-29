@@ -4,6 +4,7 @@
     "publisher": "Khushdil380",
     "description": "A custom VS Code theme with vibrant colors and a happy vibe.",
     "version": "0.0.1",
+    "icon": "icon.jpg",
     "engines": {
       "vscode": "^1.60.0"
     },
@@ -13,9 +14,14 @@
     "contributes": {
       "themes": [
         {
-          "label": "Happy Heart",
+          "label": "Happy Heart 1",
           "uiTheme": "vs-dark",
-          "path": "./themes/happy-heart-color-theme.json"
+          "path": "./themes/happy-heart-color-theme-1.json"
+        },
+        {
+          "label": "Happy Heart 2",
+          "uiTheme": "vs-dark",
+          "path": "./themes/happy-heart-color-theme-2.json"
         }
       ]
     },
