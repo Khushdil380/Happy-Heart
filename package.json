@@ -2,8 +2,8 @@
     "name": "happy-heart",
     "displayName": "Happy Heart",
     "publisher": "Khushdil380",
-    "description": "A custom VS Code theme with vibrant colors and a happy vibe.",
-    "version": "0.0.2",
+    "description": "A collection of vibrant VS Code themes with modular design and easy customization. Features multiple color schemes with a happy, energetic vibe.",
+    "version": "1.0.0",
     "icon": "icon.jpg",
     "engines": {
       "vscode": "^1.60.0"
@@ -11,30 +11,64 @@
     "categories": [
       "Themes"
     ],
+    "keywords": [
+      "theme",
+      "dark",
+      "colorful",
+      "vibrant",
+      "happy",
+      "customizable"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Khushdil380/happy-heart-theme"
+    },
+    "homepage": "https://github.com/Khushdil380/happy-heart-theme#readme",
+    "bugs": {
+      "url": "https://github.com/Khushdil380/happy-heart-theme/issues"
+    },
     "contributes": {
       "themes": [
         {
-          "label": "Happy Heart 1",
+          "label": "Happy Heart 1 - Vibrant Purple",
           "uiTheme": "vs-dark",
-          "path": "./themes/happy-heart-color-theme-1.json"
+          "path": "./themes/happy-heart-1.json"
         },
         {
-          "label": "Happy Heart 2",
+          "label": "Happy Heart 2 - Enhanced Dark",
           "uiTheme": "vs-dark",
-          "path": "./themes/happy-heart-color-theme-2.json"
+          "path": "./themes/happy-heart-2.json"
         },
         {
-          "label": "Happy Heart 3",
+          "label": "Happy Heart 3 - Ocean Breeze",
           "uiTheme": "vs-dark",
-          "path": "./themes/happy-heart-color-theme-3.json"
+          "path": "./themes/happy-heart-3.json"
+        },
+        {
+          "label": "Happy Heart 4 - Sunset Glow",
+          "uiTheme": "vs-dark",
+          "path": "./themes/happy-heart-4.json"
+        },
+        {
+          "label": "Happy Heart 5 - Forest Dreams",
+          "uiTheme": "vs-dark",
+          "path": "./themes/happy-heart-5.json"
         }
       ]
     },
     "scripts": {
-      "vscode:prepublish": "npm run compile",
-      "compile": "echo 'No compile step required'"
+      "build": "node build.js",
+      "build:watch": "nodemon --watch src --ext js --exec \"npm run build\"",
+      "vscode:prepublish": "npm run build",
+      "compile": "npm run build",
+      "dev": "npm run build:watch",
+      "package": "vsce package",
+      "publish": "vsce publish"
     },
-    
-    "devDependencies": {}
+    "type": "module",
+    "devDependencies": {
+      "nodemon": "^3.0.0",
+      "@vscode/vsce": "^2.19.0"
+    }
   }
   
