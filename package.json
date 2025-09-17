@@ -22,6 +22,11 @@
           "label": "Happy Heart 2",
           "uiTheme": "vs-dark",
           "path": "./themes/happy-heart-color-theme-2.json"
+        },
+        {
+          "label": "Happy Heart 3",
+          "uiTheme": "vs-dark",
+          "path": "./themes/happy-heart-color-theme-3.json"
         }
       ]
     },
