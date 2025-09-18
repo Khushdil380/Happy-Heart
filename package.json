@@ -6,8 +6,9 @@
     "version": "1.0.0",
     "icon": "icon.jpg",
     "engines": {
-      "vscode": "^1.60.0"
+      "vscode": "^1.75.0"
     },
+    "main": "./src/extension.js",
     "categories": [
       "Themes"
     ],
@@ -28,31 +29,139 @@
       "url": "https://github.com/Khushdil380/happy-heart-theme/issues"
     },
     "contributes": {
+      "commands": [
+        {
+          "command": "happyHeart.quickThemeSwitch",
+          "title": "Quick Theme Switch",
+          "category": "Happy Heart"
+        },
+        {
+          "command": "happyHeart.nextTheme",
+          "title": "Next Happy Heart Theme",
+          "category": "Happy Heart"
+        },
+        {
+          "command": "happyHeart.previousTheme",
+          "title": "Previous Happy Heart Theme",
+          "category": "Happy Heart"
+        },
+        {
+          "command": "happyHeart.randomTheme",
+          "title": "Random Happy Heart Theme",
+          "category": "Happy Heart"
+        }
+      ],
+      "keybindings": [
+        {
+          "command": "happyHeart.quickThemeSwitch",
+          "key": "ctrl+shift+t",
+          "mac": "cmd+shift+t",
+          "when": "editorTextFocus"
+        },
+        {
+          "command": "happyHeart.nextTheme",
+          "key": "ctrl+shift+right",
+          "mac": "cmd+shift+right",
+          "when": "editorTextFocus"
+        },
+        {
+          "command": "happyHeart.previousTheme",
+          "key": "ctrl+shift+left",
+          "mac": "cmd+shift+left",
+          "when": "editorTextFocus"
+        },
+        {
+          "command": "happyHeart.randomTheme",
+          "key": "ctrl+shift+r",
+          "mac": "cmd+shift+r",
+          "when": "editorTextFocus"
+        }
+      ],
       "themes": [
         {
-          "label": "Happy Heart 1 - Vibrant Purple",
+          "label": "Happy Heart 1 - Dark Classic",
           "uiTheme": "vs-dark",
-          "path": "./themes/happy-heart-1.json"
+          "path": "./themes/happy-heart-dark1.json"
         },
         {
-          "label": "Happy Heart 2 - Enhanced Dark",
+          "label": "Happy Heart 2 - Dark Orange",
           "uiTheme": "vs-dark",
-          "path": "./themes/happy-heart-2.json"
+          "path": "./themes/happy-heart-dark2.json"
         },
         {
-          "label": "Happy Heart 3 - Ocean Breeze",
+          "label": "Happy Heart 3 - Dark Purple",
           "uiTheme": "vs-dark",
-          "path": "./themes/happy-heart-3.json"
+          "path": "./themes/happy-heart-dark3.json"
         },
         {
-          "label": "Happy Heart 4 - Sunset Glow",
+          "label": "Happy Heart 4 - Dark Green",
           "uiTheme": "vs-dark",
-          "path": "./themes/happy-heart-4.json"
+          "path": "./themes/happy-heart-dark4.json"
         },
         {
-          "label": "Happy Heart 5 - Forest Dreams",
+          "label": "Happy Heart 5 - Deep Blue",
           "uiTheme": "vs-dark",
-          "path": "./themes/happy-heart-5.json"
+          "path": "./themes/happy-heart-darkBlue1.json"
+        },
+        {
+          "label": "Happy Heart 6 - Ocean Blue",
+          "uiTheme": "vs-dark",
+          "path": "./themes/happy-heart-darkBlue2.json"
+        },
+        {
+          "label": "Happy Heart 7 - Navy Blue",
+          "uiTheme": "vs-dark",
+          "path": "./themes/happy-heart-darkBlue3.json"
+        },
+        {
+          "label": "Happy Heart 8 - Bright Light",
+          "uiTheme": "vs",
+          "path": "./themes/happy-heart-light1.json"
+        },
+        {
+          "label": "Happy Heart 9 - Smooth Light",
+          "uiTheme": "vs",
+          "path": "./themes/happy-heart-light2.json"
+        },
+        {
+          "label": "Happy Heart 10 - Forest Green",
+          "uiTheme": "vs-dark",
+          "path": "./themes/happy-heart-green1.json"
+        },
+        {
+          "label": "Happy Heart 11 - Emerald Green",
+          "uiTheme": "vs-dark",
+          "path": "./themes/happy-heart-green2.json"
+        },
+        {
+          "label": "Happy Heart 12 - Midnight Purple",
+          "uiTheme": "vs-dark",
+          "path": "./themes/happy-heart-purple1.json"
+        },
+        {
+          "label": "Happy Heart 13 - Royal Purple",
+          "uiTheme": "vs-dark",
+          "path": "./themes/happy-heart-purple2.json"
+        },
+        {
+          "label": "Happy Heart 14 - Rose Gold",
+          "uiTheme": "vs-dark",
+          "path": "./themes/happy-heart-roseGold.json"
+        },
+        {
+          "label": "Happy Heart 15 - Chilli Paper",
+          "uiTheme": "vs-dark",
+          "path": "./themes/happy-heart-chilliPaper.json"
+        },
+        {
+          "label": "Happy Heart 16 - Grey",
+          "uiTheme": "vs-dark",
+          "path": "./themes/happy-heart-grey.json"
+        },
+        {
+          "label": "Happy Heart 17 - Yellow",
+          "uiTheme": "vs-dark",
+          "path": "./themes/happy-heart-yellow.json"
         }
       ]
     },
@@ -63,12 +172,17 @@
       "compile": "npm run build",
       "dev": "npm run build:watch",
       "package": "vsce package",
-      "publish": "vsce publish"
+      "publish": "vsce publish",
+      "compile:extension": "tsc -p .",
+      "watch:extension": "tsc -watch -p ."
     },
     "type": "module",
     "devDependencies": {
       "nodemon": "^3.0.0",
-      "@vscode/vsce": "^2.19.0"
+      "@vscode/vsce": "^2.19.0",
+      "@types/node": "^20.0.0",
+      "@types/vscode": "^1.60.0",
+      "typescript": "^5.0.0"
     }
   }
   
