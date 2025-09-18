@@ -188,7 +188,7 @@ class AdvancedThemeGenerator {
     const tokenMappings = [
       // Comments
       {
-        scopes: ['comment', 'comment.line', 'comment.block'],
+        scope: ['comment', 'comment.line', 'comment.block'],
         settings: {
           foreground: tokenColorScheme.comment || '#999999',
           fontStyle: 'italic'
@@ -196,7 +196,7 @@ class AdvancedThemeGenerator {
       },
       // Keywords
       {
-        scopes: ['keyword', 'keyword.control', 'keyword.operator', 'keyword.control.directive'],
+        scope: ['keyword', 'keyword.control', 'keyword.operator', 'keyword.control.directive'],
         settings: {
           foreground: tokenColorScheme.keyword || '#0066cc',
           fontStyle: 'bold'
@@ -204,7 +204,7 @@ class AdvancedThemeGenerator {
       },
       // Storage types
       {
-        scopes: ['storage', 'storage.type', 'storage.modifier', 'storage.type.primitive'],
+        scope: ['storage', 'storage.type', 'storage.modifier', 'storage.type.primitive'],
         settings: {
           foreground: tokenColorScheme.storage || '#ff3366',
           fontStyle: 'bold'
@@ -212,182 +212,182 @@ class AdvancedThemeGenerator {
       },
       // Variables
       {
-        scopes: ['variable', 'variable.parameter', 'variable.language', 'variable.other.readwrite'],
+        scope: ['variable', 'variable.parameter', 'variable.language', 'variable.other.readwrite'],
         settings: {
           foreground: tokenColorScheme.variable || '#ffaa00'
         }
       },
       // Functions
       {
-        scopes: ['entity.name.function', 'support.function', 'support.function.builtin'],
+        scope: ['entity.name.function', 'support.function', 'support.function.builtin'],
         settings: {
           foreground: tokenColorScheme.function || '#8844ff'
         }
       },
       // Function calls
       {
-        scopes: ['meta.function-call', 'variable.function'],
+        scope: ['meta.function-call', 'variable.function'],
         settings: {
           foreground: tokenColorScheme.functionCall || '#8844ff'
         }
       },
       // Strings
       {
-        scopes: ['string', 'string.quoted.single', 'string.quoted.double', 'string.quoted.template'],
+        scope: ['string', 'string.quoted.single', 'string.quoted.double', 'string.quoted.template'],
         settings: {
           foreground: tokenColorScheme.string || '#00aaff'
         }
       },
       // Numbers
       {
-        scopes: ['constant.numeric', 'constant.numeric.integer', 'constant.numeric.float'],
+        scope: ['constant.numeric', 'constant.numeric.integer', 'constant.numeric.float'],
         settings: {
           foreground: tokenColorScheme.number || '#ff3366'
         }
       },
       // Constants
       {
-        scopes: ['constant', 'constant.language', 'constant.character'],
+        scope: ['constant', 'constant.language', 'constant.character'],
         settings: {
           foreground: tokenColorScheme.constant || '#7c3aed'
         }
       },
       // Booleans
       {
-        scopes: ['constant.language.boolean'],
+        scope: ['constant.language.boolean'],
         settings: {
           foreground: tokenColorScheme.boolean || '#ef4444'
         }
       },
       // Operators
       {
-        scopes: ['keyword.operator', 'punctuation.separator', 'punctuation.terminator'],
+        scope: ['keyword.operator', 'punctuation.separator', 'punctuation.terminator'],
         settings: {
           foreground: tokenColorScheme.operator || '#ffaa00'
         }
       },
       // Punctuation
       {
-        scopes: ['punctuation', 'punctuation.definition', 'punctuation.section'],
+        scope: ['punctuation', 'punctuation.definition', 'punctuation.section'],
         settings: {
           foreground: tokenColorScheme.punctuation || '#999999'
         }
       },
       // HTML/JSX Tags
       {
-        scopes: ['entity.name.tag', 'entity.name.tag.html', 'entity.name.tag.jsx'],
+        scope: ['entity.name.tag', 'entity.name.tag.html', 'entity.name.tag.jsx'],
         settings: {
           foreground: tokenColorScheme.tag || '#8844ff'
         }
       },
       // Attributes
       {
-        scopes: ['entity.other.attribute-name', 'entity.other.attribute-name.html'],
+        scope: ['entity.other.attribute-name', 'entity.other.attribute-name.html'],
         settings: {
           foreground: tokenColorScheme.attribute || '#ffaa00'
         }
       },
       // CSS Classes
       {
-        scopes: ['entity.other.attribute-name.class', 'entity.other.attribute-name.class.css'],
+        scope: ['entity.other.attribute-name.class', 'entity.other.attribute-name.class.css'],
         settings: {
           foreground: tokenColorScheme.className || '#00aaff'
         }
       },
       // CSS IDs
       {
-        scopes: ['entity.other.attribute-name.id', 'entity.other.attribute-name.id.css'],
+        scope: ['entity.other.attribute-name.id', 'entity.other.attribute-name.id.css'],
         settings: {
           foreground: tokenColorScheme.id || '#ff3366'
         }
       },
       // CSS Properties
       {
-        scopes: ['support.type.property-name', 'support.type.property-name.css'],
+        scope: ['support.type.property-name', 'support.type.property-name.css'],
         settings: {
           foreground: tokenColorScheme.property || '#0066cc'
         }
       },
       // CSS Values
       {
-        scopes: ['support.constant.property-value', 'support.constant.property-value.css'],
+        scope: ['support.constant.property-value', 'support.constant.property-value.css'],
         settings: {
           foreground: tokenColorScheme.value || '#8844ff'
         }
       },
       // Types
       {
-        scopes: ['entity.name.type', 'entity.other.inherited-class', 'entity.name.struct'],
+        scope: ['entity.name.type', 'entity.other.inherited-class', 'entity.name.struct'],
         settings: {
           foreground: tokenColorScheme.type || '#00aaff'
         }
       },
       // Classes
       {
-        scopes: ['entity.name.class', 'support.class'],
+        scope: ['entity.name.class', 'support.class'],
         settings: {
           foreground: tokenColorScheme.class || '#10b981'
         }
       },
       // Interfaces
       {
-        scopes: ['entity.name.interface', 'entity.name.type.interface'],
+        scope: ['entity.name.interface', 'entity.name.type.interface'],
         settings: {
           foreground: tokenColorScheme.interface || '#06b6d4'
         }
       },
       // Namespaces
       {
-        scopes: ['entity.name.namespace', 'entity.name.scope-resolution'],
+        scope: ['entity.name.namespace', 'entity.name.scope-resolution'],
         settings: {
           foreground: tokenColorScheme.namespace || '#7c3aed'
         }
       },
       // Decorators
       {
-        scopes: ['punctuation.definition.decorator', 'entity.name.function.decorator'],
+        scope: ['punctuation.definition.decorator', 'entity.name.function.decorator'],
         settings: {
           foreground: tokenColorScheme.decorator || '#f59e0b'
         }
       },
       // Meta tags
       {
-        scopes: ['meta.tag', 'meta.tag.html', 'meta.tag.jsx'],
+        scope: ['meta.tag', 'meta.tag.html', 'meta.tag.jsx'],
         settings: {
           foreground: tokenColorScheme.tag || '#8844ff'
         }
       },
       // Regex
       {
-        scopes: ['string.regexp'],
+        scope: ['string.regexp'],
         settings: {
           foreground: tokenColorScheme.string || '#00aaff'
         }
       },
       // Template literals
       {
-        scopes: ['string.template', 'string.template.js', 'string.template.expression.js'],
+        scope: ['string.template', 'string.template.js', 'string.template.expression.js'],
         settings: {
           foreground: tokenColorScheme.string || '#00aaff'
         }
       },
       // JSON keys
       {
-        scopes: ['support.type.property-name.json'],
+        scope: ['support.type.property-name.json'],
         settings: {
           foreground: tokenColorScheme.property || '#0066cc'
         }
       },
       // JSON values
       {
-        scopes: ['constant.language.json'],
+        scope: ['constant.language.json'],
         settings: {
           foreground: tokenColorScheme.value || '#8844ff'
         }
       },
       // Markdown headers
       {
-        scopes: ['markup.heading', 'markup.heading.1', 'markup.heading.2'],
+        scope: ['markup.heading', 'markup.heading.1', 'markup.heading.2'],
         settings: {
           foreground: tokenColorScheme.keyword || '#0066cc',
           fontStyle: 'bold'
@@ -395,7 +395,7 @@ class AdvancedThemeGenerator {
       },
       // Markdown links
       {
-        scopes: ['markup.underline.link'],
+        scope: ['markup.underline.link'],
         settings: {
           foreground: tokenColorScheme.primary || '#2563eb',
           fontStyle: 'underline'
@@ -403,14 +403,14 @@ class AdvancedThemeGenerator {
       },
       // Markdown bold
       {
-        scopes: ['markup.bold'],
+        scope: ['markup.bold'],
         settings: {
           fontStyle: 'bold'
         }
       },
       // Markdown italic
       {
-        scopes: ['markup.italic'],
+        scope: ['markup.italic'],
         settings: {
           fontStyle: 'italic'
         }

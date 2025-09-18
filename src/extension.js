@@ -1,4 +1,4 @@
-const vscode = require('vscode');
+import * as vscode from 'vscode';
 
 // Happy Heart theme names in order
 const happyHeartThemes = [
@@ -110,7 +110,7 @@ function deactivate() {
     console.log('Happy Heart Theme Extension is now deactivated!');
 }
 
-module.exports = {
+export {
     activate,
     deactivate
 };
