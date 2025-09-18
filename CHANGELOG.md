@@ -2,6 +2,18 @@
 
 All notable changes to the Happy Heart Theme extension will be documented in this file.
 
+## [1.0.1] - 2024-01-18
+
+### 🐛 Critical Bug Fixes
+- **Fixed Token Colors:** Resolved critical issue where syntax highlighting wasn't working due to incorrect `"scopes"` property (changed to `"scope"`)
+- **Fixed Extension Commands:** Resolved keyboard shortcuts not working by converting from CommonJS to ES modules
+- **Enhanced Token Colors:** Each theme now has unique, diverse color schemes for syntax highlighting
+
+### ✨ Improvements
+- **Rich Syntax Highlighting:** All 17 themes now have distinct color combinations for comments, keywords, strings, variables, functions, numbers, and more
+- **Working Shortcuts:** All keyboard shortcuts now functional (`Ctrl+Shift+T`, `Ctrl+Shift+Right/Left`, `Ctrl+Shift+R`)
+- **Better User Experience:** Themes now provide beautiful, colorful syntax highlighting as intended
+
 ## [1.0.0] - 2024-01-18
 
 ### 🎉 Major Update - Complete Rewrite

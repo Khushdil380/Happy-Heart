@@ -16,6 +16,46 @@ A comprehensive collection of 17 vibrant VS Code themes with advanced modular de
 - **5-Color System** - Consistent theming across all interface elements
 - **Bracket Pair Colorization** - Beautiful bracket matching with 6-color system
 
+## 📸 Screenshots & Demo
+
+### 🎬 Theme Showcase GIF
+![Theme Showcase](screenshots/theme-showcase.gif)
+*Quick preview of all 17 Happy Heart themes in action*
+
+### 🌙 Dark Theme Collection
+| Dark Classic | Dark Orange | Dark Purple | Dark Green |
+|:---:|:---:|:---:|:---:|
+| ![Dark Classic](screenshots/dark-classic.png) | ![Dark Orange](screenshots/dark-orange.png) | ![Dark Purple](screenshots/dark-purple.png) | ![Dark Green](screenshots/dark-green.png) |
+
+### 🌊 Dark Blue Theme Collection
+| Deep Blue | Ocean Blue | Navy Blue |
+|:---:|:---:|:---:|
+| ![Deep Blue](screenshots/deep-blue.png) | ![Ocean Blue](screenshots/ocean-blue.png) | ![Navy Blue](screenshots/navy-blue.png) |
+
+### ☀️ Light Theme Collection
+| Bright Light | Smooth Light |
+|:---:|:---:|
+| ![Bright Light](screenshots/bright-light.png) | ![Smooth Light](screenshots/smooth-light.png) |
+
+### 🌿 Green Theme Collection
+| Forest Green | Emerald Green |
+|:---:|:---:|
+| ![Forest Green](screenshots/forest-green.png) | ![Emerald Green](screenshots/emerald-green.png) |
+
+### 💜 Purple Theme Collection
+| Midnight Purple | Royal Purple |
+|:---:|:---:|
+| ![Midnight Purple](screenshots/midnight-purple.png) | ![Royal Purple](screenshots/royal-purple.png) |
+
+### ✨ Special Theme Collection
+| Rose Gold | Chilli Paper | Grey | Yellow |
+|:---:|:---:|:---:|:---:|
+| ![Rose Gold](screenshots/rose-gold.png) | ![Chilli Paper](screenshots/chilli-paper.png) | ![Grey](screenshots/grey.png) | ![Yellow](screenshots/yellow.png) |
+
+### 🎯 Syntax Highlighting Examples
+![Syntax Highlighting](screenshots/syntax-highlighting.png)
+*Rich, diverse syntax highlighting with unique colors for each theme*
+
 ## 🎨 Theme Collection
 
 ### 🌙 Dark Themes (4 Variants)
@@ -325,12 +365,15 @@ We welcome contributions! Here's how to get started:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🔗 Links
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Copyright (c) 2025 Khushdil380 and contributors
+SPDX-License-Identifier: MIT
 
-- **VS Code Marketplace**: [Install Happy Heart Themes](https://marketplace.visualstudio.com/items?itemName=your-extension-name)
-- **GitHub Repository**: [View Source Code](https://github.com/your-username/happy-heart-theme)
+- **GitHub Repository**: [View Source Code](https://github.com/Khushdil380/Happy-Heart)
 - **Documentation**: [Complete Guide](docs/THEME_CUSTOMIZATION_GUIDE.md)
-- **Issues**: [Report Bugs](https://github.com/your-username/happy-heart-theme/issues)
-- **Discussions**: [Community Forum](https://github.com/your-username/happy-heart-theme/discussions)
+- **Issues**: [Report Bugs](https://github.com/Khushdil380/Happy-Heart/issues)
+- **Discussions**: [Community Forum](https://github.com/Khushdil380/Happy-Heart/discussions)
 
 ---
 

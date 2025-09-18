@@ -3,7 +3,7 @@
     "displayName": "Happy Heart",
     "publisher": "Khushdil380",
     "description": "A collection of vibrant VS Code themes with modular design and easy customization. Features multiple color schemes with a happy, energetic vibe.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icon": "icon.jpg",
     "engines": {
       "vscode": "^1.75.0"
