@@ -1,0 +1,664 @@
+{
+  "name": "Happy Heart Theme Collection",
+  "version": "1.0.1",
+  "description": "A comprehensive collection of 17 vibrant VS Code themes with advanced modular design, comprehensive UI theming, and enhanced syntax highlighting.",
+  "author": "Khushdil380",
+  "publisher": "Khushdil380",
+  "homepage": "https://github.com/Khushdil380/happy-heart-theme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Khushdil380/happy-heart-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Khushdil380/happy-heart-theme/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "dark",
+    "light",
+    "colorful",
+    "vibrant",
+    "happy",
+    "customizable",
+    "syntax-highlighting",
+    "ui-theming",
+    "modular"
+  ],
+  "categories": ["Themes"],
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Happy Heart 1 - Dark Classic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/happy-heart-dark1.json"
+      },
+      {
+        "label": "Happy Heart 2 - Dark Orange",
+        "uiTheme": "vs-dark",
+        "path": "./themes/happy-heart-dark2.json"
+      },
+      {
+        "label": "Happy Heart 3 - Dark Purple",
+        "uiTheme": "vs-dark",
+        "path": "./themes/happy-heart-dark3.json"
+      },
+      {
+        "label": "Happy Heart 4 - Dark Green",
+        "uiTheme": "vs-dark",
+        "path": "./themes/happy-heart-dark4.json"
+      },
+      {
+        "label": "Happy Heart 5 - Deep Blue",
+        "uiTheme": "vs-dark",
+        "path": "./themes/happy-heart-darkBlue1.json"
+      },
+      {
+        "label": "Happy Heart 6 - Ocean Blue",
+        "uiTheme": "vs-dark",
+        "path": "./themes/happy-heart-darkBlue2.json"
+      },
+      {
+        "label": "Happy Heart 7 - Navy Blue",
+        "uiTheme": "vs-dark",
+        "path": "./themes/happy-heart-darkBlue3.json"
+      },
+      {
+        "label": "Happy Heart 8 - Bright Light",
+        "uiTheme": "vs",
+        "path": "./themes/happy-heart-light1.json"
+      },
+      {
+        "label": "Happy Heart 9 - Smooth Light",
+        "uiTheme": "vs",
+        "path": "./themes/happy-heart-light2.json"
+      },
+      {
+        "label": "Happy Heart 10 - Forest Green",
+        "uiTheme": "vs-dark",
+        "path": "./themes/happy-heart-green1.json"
+      },
+      {
+        "label": "Happy Heart 11 - Emerald Green",
+        "uiTheme": "vs-dark",
+        "path": "./themes/happy-heart-green2.json"
+      },
+      {
+        "label": "Happy Heart 12 - Midnight Purple",
+        "uiTheme": "vs-dark",
+        "path": "./themes/happy-heart-purple1.json"
+      },
+      {
+        "label": "Happy Heart 13 - Royal Purple",
+        "uiTheme": "vs-dark",
+        "path": "./themes/happy-heart-purple2.json"
+      },
+      {
+        "label": "Happy Heart 14 - Rose Gold",
+        "uiTheme": "vs-dark",
+        "path": "./themes/happy-heart-roseGold.json"
+      },
+      {
+        "label": "Happy Heart 15 - Chilli Paper",
+        "uiTheme": "vs-dark",
+        "path": "./themes/happy-heart-chilliPaper.json"
+      },
+      {
+        "label": "Happy Heart 16 - Grey",
+        "uiTheme": "vs-dark",
+        "path": "./themes/happy-heart-grey.json"
+      },
+      {
+        "label": "Happy Heart 17 - Yellow",
+        "uiTheme": "vs-dark",
+        "path": "./themes/happy-heart-yellow.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "happyHeart.quickThemeSwitch",
+        "title": "Quick Theme Switch",
+        "category": "Happy Heart"
+      },
+      {
+        "command": "happyHeart.nextTheme",
+        "title": "Next Happy Heart Theme",
+        "category": "Happy Heart"
+      },
+      {
+        "command": "happyHeart.previousTheme",
+        "title": "Previous Happy Heart Theme",
+        "category": "Happy Heart"
+      },
+      {
+        "command": "happyHeart.randomTheme",
+        "title": "Random Happy Heart Theme",
+        "category": "Happy Heart"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "happyHeart.quickThemeSwitch",
+        "key": "ctrl+shift+t",
+        "mac": "cmd+shift+t",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "happyHeart.nextTheme",
+        "key": "ctrl+shift+right",
+        "mac": "cmd+shift+right",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "happyHeart.previousTheme",
+        "key": "ctrl+shift+left",
+        "mac": "cmd+shift+left",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "happyHeart.randomTheme",
+        "key": "ctrl+shift+r",
+        "mac": "cmd+shift+r",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "node build.js",
+    "build:watch": "nodemon --watch src --ext js --exec \"npm run build\"",
+    "vscode:prepublish": "npm run build",
+    "compile": "npm run build",
+    "dev": "npm run build:watch",
+    "package": "vsce package",
+    "publish": "vsce publish",
+    "publish:guide": "node publish.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "@vscode/vsce": "^2.19.0"
+  },
+  "features": {
+    "themes": {
+      "count": 17,
+      "categories": {
+        "dark": 4,
+        "light": 2,
+        "blue": 3,
+        "green": 2,
+        "purple": 2,
+        "special": 4
+      }
+    },
+    "syntaxHighlighting": {
+      "tokenTypes": 30,
+      "languages": [
+        "javascript",
+        "typescript",
+        "python",
+        "java",
+        "c",
+        "cpp",
+        "csharp",
+        "go",
+        "rust",
+        "php",
+        "ruby",
+        "swift",
+        "kotlin",
+        "html",
+        "css",
+        "scss",
+        "less",
+        "json",
+        "xml",
+        "yaml",
+        "markdown"
+      ]
+    },
+    "uiTheming": {
+      "sections": 20,
+      "properties": [
+        "titleBar",
+        "menuBar",
+        "activityBar",
+        "sideBar",
+        "editor",
+        "panel",
+        "statusBar",
+        "terminal",
+        "notifications",
+        "quickPick"
+      ]
+    },
+    "keyboardShortcuts": {
+      "count": 4,
+      "shortcuts": [
+        "Ctrl+Shift+T - Quick Theme Switch",
+        "Ctrl+Shift+Right - Next Theme",
+        "Ctrl+Shift+Left - Previous Theme",
+        "Ctrl+Shift+R - Random Theme"
+      ]
+    }
+  },
+  "colorPalettes": {
+    "dark1": {
+      "primary": "#00ff88",
+      "secondary": "#ff3366",
+      "accent": "#ffaa00",
+      "background": "#000000",
+      "surface": "#0a0a0a",
+      "text": "#ffffff"
+    },
+    "dark2": {
+      "primary": "#ff6b35",
+      "secondary": "#00d4ff",
+      "accent": "#ffd700",
+      "background": "#0a0a0a",
+      "surface": "#1a1a1a",
+      "text": "#ffffff"
+    },
+    "dark3": {
+      "primary": "#a855f7",
+      "secondary": "#ec4899",
+      "accent": "#06b6d4",
+      "background": "#0f0f0f",
+      "surface": "#1f1f1f",
+      "text": "#ffffff"
+    },
+    "dark4": {
+      "primary": "#4ade80",
+      "secondary": "#22c55e",
+      "accent": "#84cc16",
+      "background": "#0a0a0a",
+      "surface": "#1a1a1a",
+      "text": "#ffffff"
+    },
+    "darkBlue1": {
+      "primary": "#00d4ff",
+      "secondary": "#ff6b35",
+      "accent": "#ffd700",
+      "background": "#010610",
+      "surface": "#020a1a",
+      "text": "#e6f1ff"
+    },
+    "darkBlue2": {
+      "primary": "#00b4d8",
+      "secondary": "#0077b6",
+      "accent": "#90e0ef",
+      "background": "#0a0e1a",
+      "surface": "#1a1f2e",
+      "text": "#e6f1ff"
+    },
+    "darkBlue3": {
+      "primary": "#0066cc",
+      "secondary": "#004499",
+      "accent": "#3399ff",
+      "background": "#051537",
+      "surface": "#0a1a4a",
+      "text": "#e6f1ff"
+    },
+    "light1": {
+      "primary": "#0066cc",
+      "secondary": "#ff3366",
+      "accent": "#ffaa00",
+      "background": "#ffffff",
+      "surface": "#f8f9fa",
+      "text": "#333333"
+    },
+    "light2": {
+      "primary": "#2563eb",
+      "secondary": "#7c3aed",
+      "accent": "#f59e0b",
+      "background": "#fafafa",
+      "surface": "#f5f5f5",
+      "text": "#1f2937"
+    },
+    "green1": {
+      "primary": "#4ade80",
+      "secondary": "#22c55e",
+      "accent": "#84cc16",
+      "background": "#0a1a0a",
+      "surface": "#0f1f0f",
+      "text": "#f0fff4"
+    },
+    "green2": {
+      "primary": "#10b981",
+      "secondary": "#059669",
+      "accent": "#34d399",
+      "background": "#064e3b",
+      "surface": "#065f46",
+      "text": "#d1fae5"
+    },
+    "purple1": {
+      "primary": "#a855f7",
+      "secondary": "#ec4899",
+      "accent": "#06b6d4",
+      "background": "#0f0b1a",
+      "surface": "#1a0f2e",
+      "text": "#e0e7ff"
+    },
+    "purple2": {
+      "primary": "#8b5cf6",
+      "secondary": "#7c3aed",
+      "accent": "#a855f7",
+      "background": "#1a0f2e",
+      "surface": "#2d1b4a",
+      "text": "#e0e7ff"
+    },
+    "roseGold": {
+      "primary": "#f43f5e",
+      "secondary": "#f59e0b",
+      "accent": "#8b5cf6",
+      "background": "#1f0f1a",
+      "surface": "#2d1b2e",
+      "text": "#fdf2f8"
+    },
+    "chilliPaper": {
+      "primary": "#dc2626",
+      "secondary": "#ef4444",
+      "accent": "#f59e0b",
+      "background": "#1a0a0a",
+      "surface": "#2a1a1a",
+      "text": "#fef2f2"
+    },
+    "grey": {
+      "primary": "#6b7280",
+      "secondary": "#9ca3af",
+      "accent": "#d1d5db",
+      "background": "#374151",
+      "surface": "#4b5563",
+      "text": "#f9fafb"
+    },
+    "yellow": {
+      "primary": "#fbbf24",
+      "secondary": "#f59e0b",
+      "accent": "#fcd34d",
+      "background": "#1a1a0a",
+      "surface": "#2a2a1a",
+      "text": "#fff8dc"
+    }
+  },
+  "syntaxHighlighting": {
+    "tokenTypes": [
+      "comment",
+      "keyword",
+      "string",
+      "variable",
+      "variable.parameter",
+      "constant",
+      "number",
+      "boolean",
+      "function",
+      "function.call",
+      "class",
+      "interface",
+      "type",
+      "operator",
+      "punctuation",
+      "tag",
+      "attribute",
+      "property",
+      "namespace",
+      "decorator",
+      "storage",
+      "storage.type",
+      "storage.modifier",
+      "entity.name.function",
+      "entity.name.class",
+      "entity.name.type",
+      "entity.name.tag",
+      "entity.name.namespace",
+      "support.function",
+      "support.class"
+    ],
+    "languages": {
+      "javascript": {
+        "keywords": ["function", "var", "let", "const", "if", "else", "for", "while", "return", "class", "import", "export"],
+        "operators": ["+", "-", "*", "/", "%", "=", "==", "===", "!=", "!==", "<", ">", "<=", ">=", "&&", "||", "!"],
+        "strings": ["\"", "'", "`"],
+        "comments": ["//", "/*", "*/"]
+      },
+      "typescript": {
+        "keywords": ["interface", "type", "enum", "namespace", "module", "declare", "abstract", "public", "private", "protected"],
+        "operators": ["+", "-", "*", "/", "%", "=", "==", "===", "!=", "!==", "<", ">", "<=", ">=", "&&", "||", "!"],
+        "strings": ["\"", "'", "`"],
+        "comments": ["//", "/*", "*/"]
+      },
+      "python": {
+        "keywords": ["def", "class", "if", "else", "elif", "for", "while", "try", "except", "finally", "import", "from", "as"],
+        "operators": ["+", "-", "*", "/", "%", "=", "==", "!=", "<", ">", "<=", ">=", "and", "or", "not", "in", "is"],
+        "strings": ["\"", "'", "'''", "\"\"\""],
+        "comments": ["#"]
+      },
+      "java": {
+        "keywords": ["public", "private", "protected", "class", "interface", "extends", "implements", "static", "final", "abstract"],
+        "operators": ["+", "-", "*", "/", "%", "=", "==", "!=", "<", ">", "<=", ">=", "&&", "||", "!"],
+        "strings": ["\""],
+        "comments": ["//", "/*", "*/"]
+      },
+      "c": {
+        "keywords": ["int", "char", "float", "double", "void", "if", "else", "for", "while", "do", "switch", "case", "break", "continue", "return"],
+        "operators": ["+", "-", "*", "/", "%", "=", "==", "!=", "<", ">", "<=", ">=", "&&", "||", "!"],
+        "strings": ["\""],
+        "comments": ["//", "/*", "*/"]
+      }
+    }
+  },
+  "uiTheming": {
+    "sections": {
+      "titleBar": {
+        "properties": ["activeBackground", "activeForeground", "inactiveBackground", "inactiveForeground", "border"],
+        "description": "Window title bar styling"
+      },
+      "menuBar": {
+        "properties": ["selectionBackground", "selectionForeground", "background", "foreground"],
+        "description": "Menu bar styling"
+      },
+      "activityBar": {
+        "properties": ["background", "foreground", "inactiveForeground", "activeBorder", "badgeBackground", "badgeForeground"],
+        "description": "Left activity bar styling"
+      },
+      "sideBar": {
+        "properties": ["background", "foreground", "border", "titleForeground", "sectionHeaderBackground", "sectionHeaderForeground"],
+        "description": "Side bar styling"
+      },
+      "editor": {
+        "properties": ["background", "selectionBackground", "selectionHighlightBackground", "wordHighlightBackground", "lineHighlightBackground", "cursorForeground"],
+        "description": "Editor area styling"
+      },
+      "panel": {
+        "properties": ["background", "border", "titleActiveForeground", "titleActiveBorder", "titleInactiveForeground"],
+        "description": "Bottom panel styling"
+      },
+      "statusBar": {
+        "properties": ["background", "foreground", "noFolderBackground", "debuggingBackground", "itemHoverBackground"],
+        "description": "Status bar styling"
+      },
+      "terminal": {
+        "properties": ["background", "foreground", "ansiBlack", "ansiBlue", "ansiCyan", "ansiGreen", "ansiMagenta", "ansiRed", "ansiWhite", "ansiYellow"],
+        "description": "Terminal styling"
+      },
+      "notifications": {
+        "properties": ["centerBorder", "centerHeaderBackground", "toastBackground", "background", "foreground", "linkForeground"],
+        "description": "Notification styling"
+      },
+      "quickPick": {
+        "properties": ["groupForeground", "groupBorder", "background", "foreground", "focusBackground", "focusForeground"],
+        "description": "Quick pick styling"
+      }
+    }
+  },
+  "keyboardShortcuts": {
+    "quickThemeSwitch": {
+      "key": "ctrl+shift+t",
+      "mac": "cmd+shift+t",
+      "description": "Open quick theme picker"
+    },
+    "nextTheme": {
+      "key": "ctrl+shift+right",
+      "mac": "cmd+shift+right",
+      "description": "Switch to next theme"
+    },
+    "previousTheme": {
+      "key": "ctrl+shift+left",
+      "mac": "cmd+shift+left",
+      "description": "Switch to previous theme"
+    },
+    "randomTheme": {
+      "key": "ctrl+shift+r",
+      "mac": "cmd+shift+r",
+      "description": "Switch to random theme"
+    }
+  },
+  "fontRecommendations": {
+    "dark1": {
+      "primary": "Source Code Pro",
+      "secondary": "Cascadia Code",
+      "fallback": "Consolas, Monaco, monospace"
+    },
+    "dark2": {
+      "primary": "JetBrains Mono",
+      "secondary": "Fira Code",
+      "fallback": "Consolas, Monaco, monospace"
+    },
+    "dark3": {
+      "primary": "JetBrains Mono",
+      "secondary": "Fira Code",
+      "fallback": "Consolas, Monaco, monospace"
+    },
+    "dark4": {
+      "primary": "JetBrains Mono",
+      "secondary": "Fira Code",
+      "fallback": "Consolas, Monaco, monospace"
+    },
+    "darkBlue1": {
+      "primary": "JetBrains Mono",
+      "secondary": "Fira Code",
+      "fallback": "Consolas, Monaco, monospace"
+    },
+    "darkBlue2": {
+      "primary": "JetBrains Mono",
+      "secondary": "Fira Code",
+      "fallback": "Consolas, Monaco, monospace"
+    },
+    "darkBlue3": {
+      "primary": "JetBrains Mono",
+      "secondary": "Fira Code",
+      "fallback": "Consolas, Monaco, monospace"
+    },
+    "light1": {
+      "primary": "SF Mono",
+      "secondary": "Monaco",
+      "fallback": "Consolas, Monaco, monospace"
+    },
+    "light2": {
+      "primary": "SF Mono",
+      "secondary": "Monaco",
+      "fallback": "Consolas, Monaco, monospace"
+    },
+    "green1": {
+      "primary": "JetBrains Mono",
+      "secondary": "Fira Code",
+      "fallback": "Consolas, Monaco, monospace"
+    },
+    "green2": {
+      "primary": "JetBrains Mono",
+      "secondary": "Fira Code",
+      "fallback": "Consolas, Monaco, monospace"
+    },
+    "purple1": {
+      "primary": "JetBrains Mono",
+      "secondary": "Fira Code",
+      "fallback": "Consolas, Monaco, monospace"
+    },
+    "purple2": {
+      "primary": "JetBrains Mono",
+      "secondary": "Fira Code",
+      "fallback": "Consolas, Monaco, monospace"
+    },
+    "roseGold": {
+      "primary": "JetBrains Mono",
+      "secondary": "Fira Code",
+      "fallback": "Consolas, Monaco, monospace"
+    },
+    "chilliPaper": {
+      "primary": "Source Code Pro",
+      "secondary": "Cascadia Code",
+      "fallback": "Consolas, Monaco, monospace"
+    },
+    "grey": {
+      "primary": "Source Code Pro",
+      "secondary": "Cascadia Code",
+      "fallback": "Consolas, Monaco, monospace"
+    },
+    "yellow": {
+      "primary": "Source Code Pro",
+      "secondary": "Cascadia Code",
+      "fallback": "Consolas, Monaco, monospace"
+    }
+  },
+  "installation": {
+    "vscode": {
+      "command": "ext install Khushdil380.happy-heart",
+      "marketplace": "https://marketplace.visualstudio.com/items?itemName=Khushdil380.happy-heart"
+    },
+    "manual": {
+      "download": "https://github.com/Khushdil380/happy-heart-theme/releases",
+      "install": "code --install-extension happy-heart-1.0.1.vsix"
+    }
+  },
+  "usage": {
+    "quickStart": [
+      "1. Install the Happy Heart Theme Collection",
+      "2. Open VS Code",
+      "3. Press Ctrl+Shift+P (Cmd+Shift+P on Mac)",
+      "4. Type 'Preferences: Color Theme'",
+      "5. Select any Happy Heart theme",
+      "6. Enjoy beautiful syntax highlighting!"
+    ],
+    "keyboardShortcuts": [
+      "Ctrl+Shift+T - Quick theme picker",
+      "Ctrl+Shift+Right - Next theme",
+      "Ctrl+Shift+Left - Previous theme",
+      "Ctrl+Shift+R - Random theme"
+    ],
+    "customization": [
+      "1. Open VS Code settings",
+      "2. Search for 'Happy Heart'",
+      "3. Customize theme colors",
+      "4. Adjust font settings",
+      "5. Configure UI elements"
+    ]
+  },
+  "support": {
+    "documentation": "https://github.com/Khushdil380/happy-heart-theme#readme",
+    "issues": "https://github.com/Khushdil380/happy-heart-theme/issues",
+    "discussions": "https://github.com/Khushdil380/happy-heart-theme/discussions",
+    "email": "support@happyheartthemes.com"
+  },
+  "changelog": {
+    "1.0.1": {
+      "date": "2024-01-18",
+      "changes": [
+        "Fixed critical token colors issue (scopes -> scope)",
+        "Fixed extension commands not working",
+        "Enhanced syntax highlighting with diverse colors",
+        "Added working keyboard shortcuts",
+        "Improved theme switching experience"
+      ]
+    },
+    "1.0.0": {
+      "date": "2024-01-18",
+      "changes": [
+        "Initial release with 17 themes",
+        "Advanced UI theming for 20 sections",
+        "Comprehensive syntax highlighting",
+        "Modular architecture",
+        "Professional font recommendations"
+      ]
+    }
+  }
+}
