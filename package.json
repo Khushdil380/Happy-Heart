@@ -172,7 +172,8 @@
       "compile": "npm run build",
       "dev": "npm run build:watch",
       "package": "vsce package",
-      "publish": "vsce publish"
+      "publish": "vsce publish",
+      "publish:guide": "node publish.js"
     },
     "type": "module",
     "devDependencies": {

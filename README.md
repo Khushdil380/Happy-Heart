@@ -57,7 +57,7 @@ A comprehensive collection of 17 vibrant VS Code themes with advanced modular de
 
 ### From Source
 ```bash
-git clone https://github.com/your-username/happy-heart-theme.git
+git clone https://github.com/Khushdil380/happy-heart-theme.git
 cd happy-heart-theme
 npm install
 npm run build
