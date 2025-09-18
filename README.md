@@ -1,6 +1,6 @@
 # Happy Heart Theme Collection
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://marketplace.visualstudio.com/items?itemName=your-extension-name)
+[![Version](https://img.shields.io/badge/version-1.0.1-blue.svg)](https://marketplace.visualstudio.com/items?itemName=your-extension-name)
 [![Downloads](https://img.shields.io/badge/downloads-1k+-green.svg)](https://marketplace.visualstudio.com/items?itemName=your-extension-name)
 [![Rating](https://img.shields.io/badge/rating-4.5%2F5-yellow.svg)](https://marketplace.visualstudio.com/items?itemName=your-extension-name)
 
