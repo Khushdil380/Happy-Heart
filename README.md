@@ -233,6 +233,7 @@ Beautiful 6-color bracket matching system for nested code structures.
 - **[QUICK_REFERENCE.md](docs/QUICK_REFERENCE.md)** - Quick reference card
 - **[EXAMPLE_NEW_THEME.md](docs/EXAMPLE_NEW_THEME.md)** - Practical example
 - **[TROUBLESHOOTING_GUIDE.md](docs/TROUBLESHOOTING_GUIDE.md)** - Problem-solving guide
+- **[SHORTCUTS_GUIDE.md](docs/SHORTCUTS_GUIDE.md)** - Keyboard shortcuts guide
 
 ## 🎨 Color Theory & Design
 

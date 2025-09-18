@@ -172,17 +172,12 @@
       "compile": "npm run build",
       "dev": "npm run build:watch",
       "package": "vsce package",
-      "publish": "vsce publish",
-      "compile:extension": "tsc -p .",
-      "watch:extension": "tsc -watch -p ."
+      "publish": "vsce publish"
     },
     "type": "module",
     "devDependencies": {
       "nodemon": "^3.0.0",
-      "@vscode/vsce": "^2.19.0",
-      "@types/node": "^20.0.0",
-      "@types/vscode": "^1.60.0",
-      "typescript": "^5.0.0"
+      "@vscode/vsce": "^2.19.0"
     }
   }
   
